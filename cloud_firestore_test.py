@@ -13,7 +13,7 @@ db = firestore.client()
 lock_ref = db.collection("test_transaction").document("lock")
 
 POOL_WORKERS = 50
-ATTEMPTS = 1000
+ATTEMPTS = 100
 TRANSACTION_MAX_RETRY = 5
 LOCK_ID_VOLUME = TRANSACTION_MAX_RETRY * 20
 print(
