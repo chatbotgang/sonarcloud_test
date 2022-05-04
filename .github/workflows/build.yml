@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - uses: actions/setup-python@v3
         with:
-          python-version: '3.x'
+          python-version: '3.7'
 
       - name: Install pipenv
         run: |
