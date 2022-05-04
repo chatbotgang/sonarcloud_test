@@ -32,7 +32,7 @@ jobs:
           pipenv install --deploy --dev
       - name: Run test suite
         run: |
-          pipenv run pytest --cov-report=xml --continue-on-collection-errors
+          pipenv run pytest --cov=. --cov-report=xml --continue-on-collection-errors
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
